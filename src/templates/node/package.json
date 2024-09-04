@@ -1,0 +1,14 @@
+{
+  "name": "template-project-name",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --watch index.js",
+    "debug": "node --watch --inspect index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
