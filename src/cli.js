@@ -93,7 +93,6 @@ const getOptions = async () => {
 };
 
 const installPackages = async (targetPath) => {
-  console.log("🚀 ~ installPackages ~ targetPath:", targetPath);
   return execa({
     cwd: targetPath,
   })`pnpm i`;

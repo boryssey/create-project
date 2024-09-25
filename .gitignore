@@ -129,6 +129,4 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-pnpm-lock.yaml
-
 test-project

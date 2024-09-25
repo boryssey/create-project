@@ -3,13 +3,11 @@ import { existsSync } from "fs";
 import { confirm } from "@inquirer/prompts";
 
 async function isDirEmptyOrNotExisting(dirname) {
-  console.log("🚀 ~ isDirEmptyOrNotExisting ~ dirname:", dirname);
   return readdir(dirname)
     .then((files) => {
       console.log({ files, dirname });
     })
     .catch((error) => {
-      console.log("🚀 ~ isDirEmptyOrNotExisting ~ error:", error);
       if (error.message.includes("no such file or directory")) {
         return true;
       }
